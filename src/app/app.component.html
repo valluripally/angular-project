@@ -1,8 +1,8 @@
-<app-header></app-header>
+<app-header (selectedTab)="listenToHeader($event)" ></app-header>
 <div class="container">
 <div class="row">
   <h2>I am working</h2>
-  <app-recipes></app-recipes>
-  <app-shopping> </app-shopping>
+  <app-recipes  *ngIf ="recipe"></app-recipes>
+  <app-shopping *ngIf ="shopping"> </app-shopping>
 </div>
 </div>
