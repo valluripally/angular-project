@@ -10,6 +10,8 @@ import { RecipeDetailsComponent } from './recipes/recipe-details/recipe-details.
 import { HeaderComponent } from './header/header/header.component';
 import {RecipesComponent} from './recipes/recipes.component';
 import {ShoppingComponent} from './shopping/shopping.component';
+import { DropdownDirective } from './shared/dropdown.directive';
+
 
 @NgModule({
   declarations: [
@@ -20,11 +22,12 @@ import {ShoppingComponent} from './shopping/shopping.component';
     RecipeDetailsComponent,
     HeaderComponent,
     RecipesComponent,
-    ShoppingComponent
+    ShoppingComponent,
+    DropdownDirective
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
