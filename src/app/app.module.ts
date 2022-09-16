@@ -13,6 +13,7 @@ import {ShoppingComponent} from './shopping/shopping.component';
 import { DropdownDirective } from './shared/dropdown.directive';
 
 import { FormsModule } from '@angular/forms';
+import { ShoppingService } from './shopping/shopping.service';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,7 @@ import { FormsModule } from '@angular/forms';
     AppRoutingModule,
     FormsModule
   ],
-  providers: [],
+  providers: [ShoppingService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
